@@ -1,0 +1,16 @@
+{
+  "name": "tarea-2",
+  "version": "1.0.0",
+  "description": "Cambiar css de pagina de perfil a scss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "sass src/sass:dist/css",
+    "styles:dev":"sass src/sass:dist/css --watch"
+  },
+  "author": "Carlos Eduardo Garay Olmos",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
