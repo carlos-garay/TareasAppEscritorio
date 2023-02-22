@@ -1,0 +1,22 @@
+{
+  "name": "tarea-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "styles": "sass src/sass:assets/css",
+    "styles:dev":"sass src/sass:assets/css --watch",
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "Carlos Garay",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sass": "^1.58.3"
+  }
+}
