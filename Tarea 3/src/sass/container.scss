@@ -7,13 +7,31 @@
     text-align:center;
 }
 
+.homeContainer{
+    align-content: center;
+    max-width: 100%;
+    > div{
+        background-color: $color-fondo-seccion;
+        height: auto;
+        width: 100%;
+        float: left;
+        @extend .box;
+    }
+}
+
+.homeContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .container{
     width: 100%;
 
     > div{
         background-color: $color-fondo-seccion;
-        height: 350px;
-        width: 25%;
+        height: 300px;
+        width: 33.33%;
         float: left;
         @extend .box;
  

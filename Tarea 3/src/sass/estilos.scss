@@ -26,6 +26,19 @@ h3{
     text-align:center;
 }
 
+nav{
+    border: solid 1px black;
+    box-sizing: border-box;
+    text-align:center;
+    background-color: $color-fondo-navbar;
+
+    > a{
+        font-size: 18px;
+        margin-right: 40px;
+        color: white;
+    }
+}
+
 main {
     max-width: 1024px;
     margin: 0 auto;
