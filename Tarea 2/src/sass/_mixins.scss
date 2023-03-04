@@ -1,0 +1,25 @@
+@mixin nomargin{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin white_title{
+    color:white;
+    text-align:center;
+}
+
+@mixin medium{
+    @media screen and (max-width: 1000px){
+        @content;
+    }
+}
+
+@mixin small{
+    @media screen and (max-width: 540px){
+        @content;
+    }
+}
+
+
+
+
