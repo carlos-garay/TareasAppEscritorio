@@ -1,0 +1,60 @@
+@import "colores";
+@import "mixins";
+
+.box{
+    border: solid 1px black;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.homeContainer{
+    align-content: center;
+    max-width: 100%;
+    > div{
+        background-color: $color-fondo-seccion;
+        height: auto;
+        width: 100%;
+        float: left;
+        @extend .box;
+    }
+}
+
+.homeContainer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container{
+    width: 100%;
+
+    > div{
+        background-color: $color-fondo-seccion;
+        height: 300px;
+        width: 33.33%;
+        float: left;
+        @extend .box;
+ 
+        
+        @include medium{
+            width: 50%
+        }
+        @include small{
+            width: 100%
+        }
+    }
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section{
+    background-color: $color-fondo-titulo-seccion;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 40px;
+    @extend .box;
+}

@@ -1,0 +1,45 @@
+@import "colores";
+@import "mixins";
+
+html,body{
+    @include nomargin;
+    font-family: arial;
+}
+
+body {
+    height: 100%;
+}
+
+
+header, footer {
+    height: 80px;
+    width: 100%;
+    background-color: $color-header-footer;
+    padding-top: 20px;
+}
+
+h2{
+    @include white_title
+}
+
+h3{
+    text-align:center;
+}
+
+nav{
+    border: solid 1px black;
+    box-sizing: border-box;
+    text-align:center;
+    background-color: $color-fondo-navbar;
+
+    > a{
+        font-size: 18px;
+        margin-right: 40px;
+        color: white;
+    }
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
