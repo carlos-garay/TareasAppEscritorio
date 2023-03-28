@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family:  Arial, Helvetica, sans-serif
+}
+
+body {
+    height: 100%;
+}
+
+header, footer {
+    height: 60px;
+    width: 100%;
+    background-color: darkslateblue;
+    padding-top: 20px;
+}
+
+h1{
+    color:white;
+    text-align:center;
+}
+
+h3{
+    text-align:center;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+
+.box{
+    border: solid 1px black;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+.container{
+    align-content: center;
+    max-width: 100%;    
+    
+    > div{
+        background-color: lightsteelblue;
+        height:auto;
+        min-height: 400px;
+        width: 100%;
+        float: left;
+        @extend .box;
+        padding-bottom: 40px;
+    }
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.section{
+    background-color: cornflowerblue;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 40px;
+    @extend .box;
+}

@@ -1,0 +1,12 @@
+nav{
+    border: solid 1px black;
+    box-sizing: border-box;
+    text-align:center;
+    background-color: steelblue;
+
+    > a{
+        font-size: 18px;
+        margin-right: 40px;
+        color: white;
+    }
+}
