@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="/../assets/estilos.css">
+    <link rel ="stylesheet" href="/../assets/container.css">
+</head>
+<header>
+    <h2>NEWS API</h2> 
+</header>
+<main>
+    <body>
+
+        <h3>Ingresa la noticia que quieres buscar:</h3>
+        <form action = "/noticias" method="get">
+            <input type="text" id="inputNoticia" name="filtro">
+            <button type="submit" value="Send Request">Buscar</button>
+        </form>
+        <br>
+
+        <div class="newsContainer">
+            {{{body}}}
+        </div>
+
+    </body>
+</main>
+<footer>
+</footer>
+</html>
